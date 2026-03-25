@@ -16,7 +16,9 @@
   body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') repeat;
+    background-blend-mode: overlay;
+    background-size: 200px 200px;
     color: #222;
     scroll-behavior: smooth;
     min-height: 100vh;
@@ -233,6 +235,25 @@
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
   }
+
+  /* TABLE STYLES */
+  table {
+    font-size: 1em;
+    color: #333;
+  }
+  th {
+    background: linear-gradient(135deg, #ff9a9e, #fecfef);
+    color: white;
+  }
+  tr:nth-child(even) {
+    background: #f2f2f2;
+  }
+
+  /* VIDEO IFRAMES */
+  iframe {
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
 </style>
 </head>
 <body>
@@ -248,9 +269,13 @@
   <a href="#about">Rreth Vaksinave</a>
   <a href="#history">Historia</a>
   <a href="#facts">Fakte</a>
+  <a href="#stats">Statistika</a>
+  <a href="#quiz">Testi</a>
+  <a href="#video">Video</a>
   <a href="#modern">Vaksinat Moderne</a>
   <a href="#how">Si Funksionojnë</a>
   <a href="#benefits">Përfitimet & Mitet</a>
+  <a href="#resources">Burime</a>
 </nav>
 
 <!-- ABOUT SECTION -->
@@ -300,6 +325,55 @@
   </div>
 </section>
 
+<!-- STATISTICS SECTION -->
+<section id="stats">
+  <h2 class="animate__animated animate__fadeInUp">Statistika dhe Shifra</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Statistics">
+      <div class="card-content">
+        <h3><i class="fas fa-chart-bar"></i> Shifrat Globale</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px;">
+          <tr style="background: #ff9a9e; color: white;">
+            <th style="padding: 10px; border: 1px solid #ddd;">Sëmundja</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Vdekje të Parandaluara (Milionë)</th>
+            <th style="padding: 10px; border: 1px solid #ddd;">Viti i Eliminimit</th>
+          </tr>
+          <tr style="background: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;">Lija</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">300-500</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">1980</td>
+          </tr>
+          <tr style="background: #e9ecef;">
+            <td style="padding: 10px; border: 1px solid #ddd;">Poliomieliti</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">18</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">2020 (Afrika)</td>
+          </tr>
+          <tr style="background: #f8f9fa;">
+            <td style="padding: 10px; border: 1px solid #ddd;">Fruthi</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">2.5</td>
+            <td style="padding: 10px; border: 1px solid #ddd;">Shumë vende</td>
+          </tr>
+        </table>
+        <p><strong>Fakt:</strong> Vaksinimi shpëton 2-3 milionë jetë çdo vit nga këto sëmundje.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54" alt="Albania Health">
+      <div class="card-content">
+        <h3><i class="fas fa-flag"></i> Në Shqipëri</h3>
+        <p>Shqipëria ka një program të fortë vaksinimi që mbulon fëmijët dhe të rriturit. Vaksinimi është falas dhe i detyrueshëm për disa sëmundje.</p>
+        <ul style="list-style: none; padding: 0;">
+          <li><i class="fas fa-check" style="color: #00b894;"></i> 95% mbulim për vaksinën e fruthit</li>
+          <li><i class="fas fa-check" style="color: #00b894;"></i> Eliminimi i poliomielitit që nga 1996</li>
+          <li><i class="fas fa-check" style="color: #00b894;"></i> Vaksinimi kundër COVID-19 për të gjithë</li>
+        </ul>
+        <p><strong>Këshillë:</strong> Kontrolloni kalendarin e vaksinimit në qendrat shëndetësore lokale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- FUN FACTS SECTION -->
 <section id="facts">
   <h2 class="animate__animated animate__fadeInUp">Fakte Interesante mbi Vaksinat</h2>
@@ -326,6 +400,37 @@
         <h3><i class="fas fa-user-md"></i> Roli i Mjekëve</h3>
         <p>Mjekët dhe infermierët luajnë rol kyç në vaksinimin e popullsisë. Ata edukojnë pacientët dhe administrojnë vaksinat në qendra shëndetësore. Pandemia COVID-19 tregoi heroizmin e tyre në mbrojtjen e shëndetit publik.</p>
         <p><strong>Fakt:</strong> Në Shqipëri, Ministria e Shëndetësisë ofron vaksinime falas për të gjithë fëmijët dhe të rriturit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ SECTION -->
+<section id="quiz">
+  <h2 class="animate__animated animate__fadeInUp">Testi i Njohurive mbi Vaksinat</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Quiz">
+      <div class="card-content">
+        <h3><i class="fas fa-question-circle"></i> Pyetja 1: Çfarë është imuniteti tufës?</h3>
+        <p>Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë.</p>
+        <button onclick="alert('Saktë! Imuniteti tufës mbron të gjithë.')" style="margin: 10px;">Përgjigja</button>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Quiz 2">
+      <div class="card-content">
+        <h3><i class="fas fa-brain"></i> Pyetja 2: Si funksionojnë vaksinat mRNA?</h3>
+        <p>Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin.</p>
+        <button onclick="alert('Po! mRNA është si një recetë për trupin.')" style="margin: 10px;">Përgjigja</button>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Quiz 3">
+      <div class="card-content">
+        <h3><i class="fas fa-lightbulb"></i> Pyetja 3: A shkaktojnë vaksinat autizëm?</h3>
+        <p>Jo, ky mit është debunksuar nga studime shkencore.</p>
+        <button onclick="alert('Saktë! Të dhënat tregojnë se vaksinat janë të sigurta.')" style="margin: 10px;">Përgjigja</button>
       </div>
     </div>
   </div>
@@ -412,6 +517,58 @@
         <h3><i class="fas fa-users"></i> Mbrojtja e Komunitetit</h3>
         <p>Vaksinimi krijon "imunitet tufës" ku shumica e popullsisë është e mbrojtur, duke parandaluar përhapjen edhe tek të pavaksinuarët. Është përgjegjësi sociale!</p>
         <p><strong>Fakt:</strong> Pandemia COVID-19 tregoi se vaksinimi ul shtrimet në spital me 90% dhe vdekjet me 95%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO SECTION -->
+<section id="video">
+  <h2 class="animate__animated animate__fadeInUp">Video Edukative</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/8Wb8xPK4T0o" title="How Vaccines Work" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3><i class="fas fa-play-circle"></i> Si Funksionojnë Vaksinat</h3>
+        <p>Një video shpjeguese nga TED-Ed mbi mekanizmin e vaksinave.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/3a9LxOJ-5Co" title="Vaccine Myths" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="card-content">
+        <h3><i class="fas fa-exclamation-triangle"></i> Debunking Vaccine Myths</h3>
+        <p>Video që demaskon mitet e zakonshme mbi vaksinat.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESOURCES SECTION -->
+<section id="resources">
+  <h2 class="animate__animated animate__fadeInUp">Burime dhe Lidhje</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570" alt="WHO">
+      <div class="card-content">
+        <h3><i class="fas fa-globe"></i> Organizata Botërore e Shëndetësisë (WHO)</h3>
+        <p>Informacion zyrtar mbi vaksinat dhe shëndetin global.</p>
+        <a href="https://www.who.int/health-topics/vaccines-and-immunization" target="_blank" class="btn">Vizito</a>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="CDC">
+      <div class="card-content">
+        <h3><i class="fas fa-hospital"></i> Qendrat për Kontrollin dhe Parandalimin e Sëmundjeve (CDC)</h3>
+        <p>Burim amerikan për statistika dhe këshilla mbi vaksinat.</p>
+        <a href="https://www.cdc.gov/vaccines/index.html" target="_blank" class="btn">Vizito</a>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54" alt="Albania Health">
+      <div class="card-content">
+        <h3><i class="fas fa-flag"></i> Ministria e Shëndetësisë së Shqipërisë</h3>
+        <p>Informacion për vaksinimin në Shqipëri dhe kalendarin e vaksinave.</p>
+        <a href="https://shendetesia.gov.al/" target="_blank" class="btn">Vizito</a>
       </div>
     </div>
   </div>
