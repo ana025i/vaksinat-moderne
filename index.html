@@ -637,6 +637,71 @@
   </div>
 </section>
 
+<!-- QUIZ SECTION -->
+<section id="quiz">
+  <h2 class="animate__animated animate__fadeInUp">Testi i Njohurive mbi Vaksinat</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <div class="card-content">
+        <form id="quizForm">
+          <p><strong>Pyetja 1:</strong> Çfarë është imuniteti tufës?</p>
+          <input type="radio" name="q1" value="correct" id="q1a"><label for="q1a">Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë.</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1b"><label for="q1b">Kur të gjithë marrin vaksinën njëherësh.</label><br>
+          <input type="radio" name="q1" value="wrong" id="q1c"><label for="q1c">Kur vaksinat shkaktojnë sëmundje.</label><br><br>
+
+          <p><strong>Pyetja 2:</strong> Si funksionojnë vaksinat mRNA?</p>
+          <input type="radio" name="q2" value="correct" id="q2a"><label for="q2a">Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin.</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2b"><label for="q2b">Ato injektojnë virusin direkt.</label><br>
+          <input type="radio" name="q2" value="wrong" id="q2c"><label for="q2c">Ato ndryshojnë ADN-në përgjithmonë.</label><br><br>
+
+          <p><strong>Pyetja 3:</strong> A shkaktojnë vaksinat autizëm?</p>
+          <input type="radio" name="q3" value="correct" id="q3a"><label for="q3a">Jo, ky mit është debunksuar nga studime shkencore.</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3b"><label for="q3b">Po, të gjitha vaksinat shkaktojnë autizëm.</label><br>
+          <input type="radio" name="q3" value="wrong" id="q3c"><label for="q3c">Vetëm vaksinat e vjetra.</label><br><br>
+
+          <p><strong>Pyetja 4:</strong> Kush shpiku vaksinën e parë?</p>
+          <input type="radio" name="q4" value="correct" id="q4a"><label for="q4a">Edward Jenner.</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4b"><label for="q4b">Louis Pasteur.</label><br>
+          <input type="radio" name="q4" value="wrong" id="q4c"><label for="q4c">Alexander Fleming.</label><br><br>
+
+          <p><strong>Pyetja 5:</strong> Çfarë është vaksinimi?</p>
+          <input type="radio" name="q5" value="correct" id="q5a"><label for="q5a">Procesi i dhënies së një substance për të krijuar imunitet.</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5b"><label for="q5b">Trajtimi i sëmundjeve ekzistuese.</label><br>
+          <input type="radio" name="q5" value="wrong" id="q5c"><label for="q5c">Pastrimi i trupit nga toksinat.</label><br><br>
+
+          <p><strong>Pyetja 6:</strong> Sa vite ka shpëtuar vaksinimi që nga 1796?</p>
+          <input type="radio" name="q6" value="correct" id="q6a"><label for="q6a">Më shumë se 2.5 miliardë jetë.</label><br>
+          <input type="radio" name="q6" value="wrong" id="q6b"><label for="q6b">1 miliardë jetë.</label><br>
+          <input type="radio" name="q6" value="wrong" id="q6c"><label for="q6c">500 milionë jetë.</label><br><br>
+
+          <p><strong>Pyetja 7:</strong> Çfarë është mRNA?</p>
+          <input type="radio" name="q7" value="correct" id="q7a"><label for="q7a">Një mesazh që thotë qelizave të prodhojnë proteina.</label><br>
+          <input type="radio" name="q7" value="wrong" id="q7b"><label for="q7b">Një lloj antibiotiku.</label><br>
+          <input type="radio" name="q7" value="wrong" id="q7c"><label for="q7c">Një vaksinë e vjetër.</label><br><br>
+
+          <p><strong>Pyetja 8:</strong> Çfarë sëmundje është eliminuar nga vaksinimi?</p>
+          <input type="radio" name="q8" value="correct" id="q8a"><label for="q8a">Lija.</label><br>
+          <input type="radio" name="q8" value="wrong" id="q8b"><label for="q8b">Gripi.</label><br>
+          <input type="radio" name="q8" value="wrong" id="q8c"><label for="q8c">Kanceri.</label><br><br>
+
+          <p><strong>Pyetja 9:</strong> Çfarë është imuniteti aktiv?</p>
+          <input type="radio" name="q9" value="correct" id="q9a"><label for="q9a">Kur trupi prodhon antitrupa pas vaksinimit.</label><br>
+          <input type="radio" name="q9" value="wrong" id="q9b"><label for="q9b">Kur merrni ilaçe.</label><br>
+          <input type="radio" name="q9" value="wrong" id="q9c"><label for="q9c">Kur hani fruta.</label><br><br>
+
+          <p><strong>Pyetja 10:</strong> Pse janë të rëndësishme vaksinat për komunitetin?</p>
+          <input type="radio" name="q10" value="correct" id="q10a"><label for="q10a">Krijojnë imunitet tufës.</label><br>
+          <input type="radio" name="q10" value="wrong" id="q10b"><label for="q10b">Bëjnë njerëzit më të fortë fizikisht.</label><br>
+          <input type="radio" name="q10" value="wrong" id="q10c"><label for="q10c">Parandalojnë vetëm sëmundjet kronike.</label><br><br>
+
+          <button type="button" onclick="calculateScore()" class="btn">Llogarit Pikët</button>
+        </form>
+        <div id="result" style="margin-top: 20px; font-weight: bold;"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CONTACT SECTION -->
 <section id="contact">
   <h2 class="animate__animated animate__fadeInUp">Kontakti</h2>
@@ -677,6 +742,20 @@ function checkAnswer(question, answer) {
   } else {
     alert("Gabim. Provo përsëri!");
   }
+}
+
+function calculateScore() {
+  let score = 0;
+  const totalQuestions = 10;
+  const form = document.getElementById('quizForm');
+  for (let i = 1; i <= totalQuestions; i++) {
+    const selected = form['q' + i].value;
+    if (selected === 'correct') {
+      score++;
+    }
+  }
+  const resultDiv = document.getElementById('result');
+  resultDiv.innerHTML = `Pikët tuaja: ${score}/${totalQuestions}. ${score >= 7 ? 'Shkëlqyeshëm!' : score >= 5 ? 'Mirë!' : 'Provo përsëri!'}`;
 }
 </script>
 
