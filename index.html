@@ -16,7 +16,7 @@
   body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') repeat;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%), url('https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') repeat;
     background-blend-mode: overlay;
     background-size: 200px 200px;
     color: #222;
@@ -40,7 +40,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
+    background: url('https://images.unsplash.com/photo-1606013241766-1f30c48d5eb2?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center;
     background-size: cover;
     opacity: 0.1;
     z-index: 0;
@@ -254,6 +254,16 @@
     border-radius: 15px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
+
+  /* CUSTOM ANIMATIONS */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  .card:hover {
+    animation: pulse 2s infinite;
+  }
 </style>
 </head>
 <body>
@@ -270,6 +280,7 @@
   <a href="#history">Historia</a>
   <a href="#facts">Fakte</a>
   <a href="#stats">Statistika</a>
+  <a href="#diseases">Sëmundje</a>
   <a href="#quiz">Testi</a>
   <a href="#video">Video</a>
   <a href="#modern">Vaksinat Moderne</a>
@@ -292,7 +303,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Vaccine Types">
+      <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Vaccine Types">
       <div class="card-content">
         <h3><i class="fas fa-vials"></i> Llojet e vaksinave</h3>
         <p>Vaksinat ndahen në disa lloje: të gjalla të dobësuara (si për fruthin), të vdekura (si për tetanozën), subunit (pjesë të antigjenit), dhe mRNA (të reja si për COVID-19). Çdo lloj ka avantazhet e veta për sëmundje të ndryshme.</p>
@@ -315,7 +326,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Modern History">
+      <img src="https://images.unsplash.com/photo-1606013241766-1f30c48d5eb2" alt="Modern History">
       <div class="card-content">
         <h3><i class="fas fa-microscope"></i> Evolucioni Modern</h3>
         <p>Në shekullin XX, vaksinat kundër poliomielitit dhe fruthit revolucionarizuan mjekësinë. Sot, teknologjia mRNA lejon krijimin e vaksinave në muaj, jo vite. Pandemia COVID-19 tregoi fuqinë e shkencës moderne.</p>
@@ -387,7 +398,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Lab Equipment">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f" alt="Lab Equipment">
       <div class="card-content">
         <h3><i class="fas fa-flask"></i> Prodhimi i Vaksinave</h3>
         <p>Vaksinat prodhohen në laboratorë të specializuar me standarde të larta higjienike. Procesi përfshin kultivimin e virusit, pastrimin dhe testimin për siguri. Kompanitë si Pfizer dhe Moderna investojnë miliarda në kërkim.</p>
@@ -405,6 +416,45 @@
   </div>
 </section>
 
+<!-- DISEASES SECTION -->
+<section id="diseases">
+  <h2 class="animate__animated animate__fadeInUp">Sëmundje të Parandaluara nga Vaksinat</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Polio">
+      <div class="card-content">
+        <h3><i class="fas fa-wheelchair"></i> Poliomieliti</h3>
+        <p>Një sëmundje që shkakton paralizë. Vaksinimi e ka ulur me 99% globalisht. Në Shqipëri, është eliminuar që nga 1996.</p>
+        <p><strong>Simptoma:</strong> Paralizë, vështirësi në frymëmarrje. Vaksinimi është kyç për parandalimin.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1606013241766-1f30c48d5eb2" alt="Measles">
+      <div class="card-content">
+        <h3><i class="fas fa-thermometer-half"></i> Fruthi</h3>
+        <p>Shkakton ethe, kollë dhe lezione. Vaksinimi e ka shpëtuar 2.5 milionë jetë çdo vit. Është shumë ngjitëse.</p>
+        <p><strong>Fakt:</strong> Një person i pavaksinuar mund të infektojë 12-18 të tjerë.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f" alt="Diphtheria">
+      <div class="card-content">
+        <h3><i class="fas fa-lungs"></i> Difteria</h3>
+        <p>Shkakton inflamacion të fytit dhe probleme respiratore. Vaksinimi e ka ulur me 90% në vende të zhvilluara.</p>
+        <p><strong>Rreziku:</strong> Mund të jetë fatale pa trajtim. Vaksinimi është pjesë e kalendarit të detyrueshëm.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInDown">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54" alt="Tetanus">
+      <div class="card-content">
+        <h3><i class="fas fa-band-aid"></i> Tetanoza</h3>
+        <p>Shkaktohet nga bakteri në plagë. Vaksinimi parandalon spazmat dhe vdekjen. Vaksinë çdo 10 vjet.</p>
+        <p><strong>Parandalim:</strong> Pastroni plagët dhe vaksinohuni rregullisht.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- QUIZ SECTION -->
 <section id="quiz">
   <h2 class="animate__animated animate__fadeInUp">Testi i Njohurive mbi Vaksinat</h2>
@@ -413,24 +463,36 @@
       <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Quiz">
       <div class="card-content">
         <h3><i class="fas fa-question-circle"></i> Pyetja 1: Çfarë është imuniteti tufës?</h3>
-        <p>Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë.</p>
-        <button onclick="alert('Saktë! Imuniteti tufës mbron të gjithë.')" style="margin: 10px;">Përgjigja</button>
+        <form onsubmit="checkAnswer(1, this.q1.value); return false;">
+          <input type="radio" name="q1" value="Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë." id="q1a"><label for="q1a">Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë.</label><br>
+          <input type="radio" name="q1" value="Kur të gjithë marrin vaksinën njëherësh." id="q1b"><label for="q1b">Kur të gjithë marrin vaksinën njëherësh.</label><br>
+          <input type="radio" name="q1" value="Kur vaksinat shkaktojnë sëmundje." id="q1c"><label for="q1c">Kur vaksinat shkaktojnë sëmundje.</label><br>
+          <button type="submit" class="btn">Kontrollo Përgjigjen</button>
+        </form>
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Quiz 2">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54" alt="Quiz 2">
       <div class="card-content">
         <h3><i class="fas fa-brain"></i> Pyetja 2: Si funksionojnë vaksinat mRNA?</h3>
-        <p>Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin.</p>
-        <button onclick="alert('Po! mRNA është si një recetë për trupin.')" style="margin: 10px;">Përgjigja</button>
+        <form onsubmit="checkAnswer(2, this.q2.value); return false;">
+          <input type="radio" name="q2" value="Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin." id="q2a"><label for="q2a">Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin.</label><br>
+          <input type="radio" name="q2" value="Ato injektojnë virusin direkt." id="q2b"><label for="q2b">Ato injektojnë virusin direkt.</label><br>
+          <input type="radio" name="q2" value="Ato ndryshojnë ADN-në përgjithmonë." id="q2c"><label for="q2c">Ato ndryshojnë ADN-në përgjithmonë.</label><br>
+          <button type="submit" class="btn">Kontrollo Përgjigjen</button>
+        </form>
       </div>
     </div>
     <div class="card animate__animated animate__fadeInUp">
       <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Quiz 3">
       <div class="card-content">
         <h3><i class="fas fa-lightbulb"></i> Pyetja 3: A shkaktojnë vaksinat autizëm?</h3>
-        <p>Jo, ky mit është debunksuar nga studime shkencore.</p>
-        <button onclick="alert('Saktë! Të dhënat tregojnë se vaksinat janë të sigurta.')" style="margin: 10px;">Përgjigja</button>
+        <form onsubmit="checkAnswer(3, this.q3.value); return false;">
+          <input type="radio" name="q3" value="Jo, ky mit është debunksuar nga studime shkencore." id="q3a"><label for="q3a">Jo, ky mit është debunksuar nga studime shkencore.</label><br>
+          <input type="radio" name="q3" value="Po, të gjitha vaksinat shkaktojnë autizëm." id="q3b"><label for="q3b">Po, të gjitha vaksinat shkaktojnë autizëm.</label><br>
+          <input type="radio" name="q3" value="Vetëm vaksinat e vjetra." id="q3c"><label for="q3c">Vetëm vaksinat e vjetra.</label><br>
+          <button type="submit" class="btn">Kontrollo Përgjigjen</button>
+        </form>
       </div>
     </div>
   </div>
@@ -450,7 +512,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInLeft">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Future Vaccines">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Future Vaccines">
       <div class="card-content">
         <h3><i class="fas fa-rocket"></i> Të Ardhmen e Vaksinave</h3>
         <p>Shkencëtarët po punojnë për vaksinë universale kundër gripit dhe HIV. Teknologjia CRISPR mund të ndryshojë ADN-në për imunitet të përjetshëm. Vaksinat e reja mund të trajtojnë kancerin dhe sëmundje autoimune.</p>
@@ -473,7 +535,7 @@
   <h2 class="animate__animated animate__fadeInUp">Si Funksionojnë Vaksinat Moderne</h2>
   <div class="cards-container">
     <div class="card animate__animated animate__fadeInLeft">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Immune System">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Immune System">
       <div class="card-content">
         <h3><i class="fas fa-shield-alt"></i> Sistemi Imunitar</h3>
         <p>Vaksinat stimulojnë qelizat B dhe T për të prodhuar antitrupa dhe kujtesë imunitare. Kur virusi sulmon, trupi është gati të luftojë pa simptoma. Është si një stërvitje për trupin!</p>
@@ -512,7 +574,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInUp">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Community Protection">
+      <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b" alt="Community Protection">
       <div class="card-content">
         <h3><i class="fas fa-users"></i> Mbrojtja e Komunitetit</h3>
         <p>Vaksinimi krijon "imunitet tufës" ku shumica e popullsisë është e mbrojtur, duke parandaluar përhapjen edhe tek të pavaksinuarët. Është përgjegjësi sociale!</p>
@@ -556,7 +618,7 @@
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
-      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="CDC">
+      <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570" alt="CDC">
       <div class="card-content">
         <h3><i class="fas fa-hospital"></i> Qendrat për Kontrollin dhe Parandalimin e Sëmundjeve (CDC)</h3>
         <p>Burim amerikan për statistika dhe këshilla mbi vaksinat.</p>
@@ -576,8 +638,23 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>Projekti realizuar nga: Joana Silaj</p>
+  <p>Punuar nga Joana Silaj</p>
 </footer>
+
+<script>
+function checkAnswer(question, answer) {
+  const correctAnswers = {
+    1: "Kur shumica e popullsisë është e vaksinuar, sëmundja nuk mund të përhapet lehtë.",
+    2: "Ato japin udhëzime trupit për të prodhuar proteina që luftojnë virusin.",
+    3: "Jo, ky mit është debunksuar nga studime shkencore."
+  };
+  if (answer === correctAnswers[question]) {
+    alert("Saktë! Urime!");
+  } else {
+    alert("Gabim. Provo përsëri!");
+  }
+}
+</script>
 
 </body>
 </html>
