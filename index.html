@@ -94,6 +94,21 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   }
+  section:nth-child(odd) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 255, 0.95) 100%);
+  }
+  section:nth-child(even) {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 250, 240, 0.95) 100%);
+  }
+  #modern {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 255, 240, 0.95) 100%);
+  }
+  #how {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 240, 245, 0.95) 100%);
+  }
+  #benefits {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 255, 250, 0.95) 100%);
+  }
   h2 {
     text-align: center;
     font-size: 3em;
@@ -149,6 +164,15 @@
     display: flex;
     align-items: center;
   }
+  .card:nth-child(1) .card-content h3 { color: #ff6b6b; }
+  .card:nth-child(2) .card-content h3 { color: #4ecdc4; }
+  .card:nth-child(3) .card-content h3 { color: #45b7d1; }
+  .card:nth-child(4) .card-content h3 { color: #f9ca24; }
+  .card:nth-child(5) .card-content h3 { color: #6c5ce7; }
+  .card:nth-child(6) .card-content h3 { color: #fd79a8; }
+  .card:nth-child(7) .card-content h3 { color: #00b894; }
+  .card:nth-child(8) .card-content h3 { color: #e17055; }
+  .card:nth-child(9) .card-content h3 { color: #a29bfe; }
   .card-content h3::before {
     content: '';
     width: 30px;
@@ -223,6 +247,7 @@
 <nav>
   <a href="#about">Rreth Vaksinave</a>
   <a href="#history">Historia</a>
+  <a href="#facts">Fakte</a>
   <a href="#modern">Vaksinat Moderne</a>
   <a href="#how">Si Funksionojnë</a>
   <a href="#benefits">Përfitimet & Mitet</a>
@@ -238,6 +263,7 @@
         <h3><i class="fas fa-syringe"></i> Çfarë janë vaksinat?</h3>
         <p>Vaksinat janë substanca që ndihmojnë trupin të krijojë imunitet ndaj sëmundjeve të ndryshme. Ato përdoren për të parandaluar infeksione dhe shpesh shpëtojnë jetë. Vaksinat përmbajnë antigjene ose pjesë të virusit/bakterit që stimulojnë sistemin imunitar pa shkaktuar sëmundjen.</p>
         <p><strong>Fakte interesante:</strong> Vaksinat kanë shpëtuar më shumë se 2.5 miliardë jetë që nga viti 1796, kur Edward Jenner shpiku vaksinën e parë kundër lisë.</p>
+        <p><strong>Pse janë të rëndësishme?</strong> Vaksinat jo vetëm mbrojnë individin, por edhe komunitetin përmes imunitetit tufës, duke ulur përhapjen e sëmundjeve. Në Shqipëri, vaksinimi ka eliminuar sëmundje si poliomieliti dhe difteria.</p>
       </div>
     </div>
     <div class="card animate__animated animate__fadeInRight">
@@ -274,6 +300,37 @@
   </div>
 </section>
 
+<!-- FUN FACTS SECTION -->
+<section id="facts">
+  <h2 class="animate__animated animate__fadeInUp">Fakte Interesante mbi Vaksinat</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f" alt="Medical Research">
+      <div class="card-content">
+        <h3><i class="fas fa-lightbulb"></i> Shkenca e Vaksinave</h3>
+        <p>Vaksinat moderne përdorin teknologji të avancuar si mRNA dhe ADN rekombinant. Këto metoda lejojnë zhvillimin e vaksinave në muaj, jo vite. Për shembull, vaksina COVID-19 u zhvillua në rekord kohë falë këtyre teknologjive.</p>
+        <p><strong>Fakt:</strong> Shkencëtarët po punojnë për vaksinë universale kundër gripit që do të mbrojë nga të gjitha variantet.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Lab Equipment">
+      <div class="card-content">
+        <h3><i class="fas fa-flask"></i> Prodhimi i Vaksinave</h3>
+        <p>Vaksinat prodhohen në laboratorë të specializuar me standarde të larta higjienike. Procesi përfshin kultivimin e virusit, pastrimin dhe testimin për siguri. Kompanitë si Pfizer dhe Moderna investojnë miliarda në kërkim.</p>
+        <p><strong>Statistikë:</strong> Bota prodhon mbi 5 miliardë doza vaksinash çdo vit për sëmundje të ndryshme.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54" alt="Healthcare Workers">
+      <div class="card-content">
+        <h3><i class="fas fa-user-md"></i> Roli i Mjekëve</h3>
+        <p>Mjekët dhe infermierët luajnë rol kyç në vaksinimin e popullsisë. Ata edukojnë pacientët dhe administrojnë vaksinat në qendra shëndetësore. Pandemia COVID-19 tregoi heroizmin e tyre në mbrojtjen e shëndetit publik.</p>
+        <p><strong>Fakt:</strong> Në Shqipëri, Ministria e Shëndetësisë ofron vaksinime falas për të gjithë fëmijët dhe të rriturit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- MODERN VACCINES -->
 <section id="modern" style="background: #e0f7ff;">
   <h2 class="animate__animated animate__fadeInUp">Vaksinat Moderne</h2>
@@ -293,6 +350,14 @@
         <h3><i class="fas fa-rocket"></i> Të Ardhmen e Vaksinave</h3>
         <p>Shkencëtarët po punojnë për vaksinë universale kundër gripit dhe HIV. Teknologjia CRISPR mund të ndryshojë ADN-në për imunitet të përjetshëm. Vaksinat e reja mund të trajtojnë kancerin dhe sëmundje autoimune.</p>
         <p><strong>Fakt i shkëlqyeshëm:</strong> Vaksinat mRNA mund të personalizohen për çdo person bazuar në gjenetikën e tyre!</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f" alt="Vaccine Development">
+      <div class="card-content">
+        <h3><i class="fas fa-cogs"></i> Zhvillimi i Vaksinave</h3>
+        <p>Procesi i zhvillimit të një vaksine merr vite dhe përfshin faza klinike për të siguruar sigurinë dhe efektivitetin. Vaksinat moderne si ajo për Ebola u zhvilluan në kohë rekord gjatë emergjencave.</p>
+        <p><strong>Shembull:</strong> Vaksina për HPV parandalon kancerin e qafës së mitrës dhe është e disponueshme për të rinjtë.</p>
       </div>
     </div>
   </div>
