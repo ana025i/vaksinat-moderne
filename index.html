@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaksinat Moderne</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<!-- Animate.css for animations -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<style>
+  /* GENERAL STYLING */
+  * {margin: 0; padding: 0; box-sizing: border-box;}
+  body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background: #f0faff;
+    color: #222;
+    scroll-behavior: smooth;
+  }
+
+  /* HEADER */
+  header {
+    background: linear-gradient(to right, #0096c7, #00b4d8);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeInDown 2s;
+  }
+  header h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+  }
+  header p {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  /* NAVIGATION */
+  nav {
+    display: flex;
+    justify-content: center;
+    background: #0077b6;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    font-weight: 600;
+    transition: all 0.3s;
+  }
+  nav a:hover {
+    background: #023e8a;
+    transform: scale(1.05);
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  h2 {
+    text-align: center;
+    font-size: 2.8em;
+    color: #0077b6;
+    margin-bottom: 40px;
+  }
+  p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+  }
+
+  /* IMAGE CARDS */
+  .card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin: 20px 0;
+    transition: transform 0.5s, box-shadow 0.5s;
+  }
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+  }
+  .card img {
+    width: 100%;
+    display: block;
+  }
+  .card-content {
+    padding: 20px;
+  }
+  .card-content h3 {
+    color: #0096c7;
+    margin-bottom: 15px;
+  }
+
+  /* BUTTONS */
+  .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: linear-gradient(to right, #0096c7, #00b4d8);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  .btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(to right, #00b4d8, #0096c7);
+  }
+
+  /* FOOTER */
+  footer {
+    text-align: center;
+    padding: 40px 20px;
+    background: #0096c7;
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+  }
+
+  /* RESPONSIVE GRID */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="animate__animated animate__fadeInDown">
+  <h1>Vaksinat Moderne</h1>
+  <p>Projekti i Biologjisë - Joana Silaj</p>
+</header>
+
+<!-- NAVIGATION -->
+<nav>
+  <a href="#about">Rreth Vaksinave</a>
+  <a href="#history">Historia</a>
+  <a href="#modern">Vaksinat Moderne</a>
+  <a href="#how">Si Funksionojnë</a>
+  <a href="#benefits">Përfitimet & Mitet</a>
+</nav>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+  <h2 class="animate__animated animate__fadeInUp">Rreth Vaksinave</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Vaccines">
+      <div class="card-content">
+        <h3>Çfarë janë vaksinat?</h3>
+        <p>Vaksinat janë substanca që ndihmojnë trupin të krijojë imunitet ndaj sëmundjeve të ndryshme. Ato përdoren për të parandaluar infeksione dhe shpesh shpëtojnë jetë. Vaksinat përmbajnë antigjene ose pjesë të virusit/bakterit që stimulojnë sistemin imunitar pa shkaktuar sëmundjen.</p>
+        <p><strong>Fakte interesante:</strong> Vaksinat kanë shpëtuar më shumë se 2.5 miliardë jetë që nga viti 1796, kur Edward Jenner shpiku vaksinën e parë kundër lisë.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Vaccine Types">
+      <div class="card-content">
+        <h3>Llojet e vaksinave</h3>
+        <p>Vaksinat ndahen në disa lloje: të gjalla të dobësuara (si për fruthin), të vdekura (si për tetanozën), subunit (pjesë të antigjenit), dhe mRNA (të reja si për COVID-19). Çdo lloj ka avantazhet e veta për sëmundje të ndryshme.</p>
+        <p><strong>Did you know?</strong> Vaksina e parë ishte kundër lisë dhe përdorte lëngun nga lezione të lopëve për të mbrojtur njerëzit!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HISTORY SECTION -->
+<section id="history" style="background: #e8f4fd;">
+  <h2 class="animate__animated animate__fadeInUp">Historia e Vaksinave</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d" alt="Edward Jenner">
+      <div class="card-content">
+        <h3>Fillimi i Vaksinimit</h3>
+        <p>Në vitin 1796, Edward Jenner shpiku vaksinën e parë kundër lisë duke përdorur variolën e lopëve. Kjo shpëtoi miliona jetë dhe çoi në zhvillimin e vaksinave moderne. Para kësaj, njerëzit përdornin variolizimin, një metodë të rrezikshme.</p>
+        <p><strong>Fakt i mahnitshëm:</strong> Lija ka vrarë 300-500 milionë njerëz në histori, por vaksinimi e ka zhdukur atë nga bota në 1980!</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Modern History">
+      <div class="card-content">
+        <h3>Evolucioni Modern</h3>
+        <p>Në shekullin XX, vaksinat kundër poliomielitit dhe fruthit revolucionarizuan mjekësinë. Sot, teknologjia mRNA lejon krijimin e vaksinave në muaj, jo vite. Pandemia COVID-19 tregoi fuqinë e shkencës moderne.</p>
+        <p><strong>Statistika:</strong> Vaksinat parandalojnë 2-3 milionë vdekje çdo vit nga sëmundje si difteria, tetanoza dhe fruthi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODERN VACCINES -->
+<section id="modern" style="background: #e0f7ff;">
+  <h2 class="animate__animated animate__fadeInUp">Vaksinat Moderne</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1606013241766-1f30c48d5eb2" alt="Modern Vaccines">
+      <div class="card-content">
+        <h3>Shembuj të njohur</h3>
+        <p>Vaksinat e reja përdorin teknologji si mRNA dhe protein spike. Shembuj janë vaksinat kundër COVID-19 (Pfizer, Moderna), HPV (kundër kancerit të qafës së mitrës), dhe influenzës moderne. Këto vaksinë janë të sigurta dhe efektive.</p>
+        <p><strong>Teknologjia mRNA:</strong> Është si një recetë për trupin për të prodhuar proteina që luftojnë virusin, pa infektuar qelizat.</p>
+        <a href="#how" class="btn">Si Funksionojnë</a>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Future Vaccines">
+      <div class="card-content">
+        <h3>Të Ardhmen e Vaksinave</h3>
+        <p>Shkencëtarët po punojnë për vaksinë universale kundër gripit dhe HIV. Teknologjia CRISPR mund të ndryshojë ADN-në për imunitet të përjetshëm. Vaksinat e reja mund të trajtojnë kancerin dhe sëmundje autoimune.</p>
+        <p><strong>Fakt i shkëlqyeshëm:</strong> Vaksinat mRNA mund të personalizohen për çdo person bazuar në gjenetikën e tyre!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW THEY WORK SECTION -->
+<section id="how">
+  <h2 class="animate__animated animate__fadeInUp">Si Funksionojnë Vaksinat Moderne</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Immune System">
+      <div class="card-content">
+        <h3>Sistemi Imunitar</h3>
+        <p>Vaksinat stimulojnë qelizat B dhe T për të prodhuar antitrupa dhe kujtesë imunitare. Kur virusi sulmon, trupi është gati të luftojë pa simptoma. Është si një stërvitje për trupin!</p>
+        <p><strong>Procesi:</strong> 1. Vaksinë fut antigjenin. 2. Sistemi imunitar reagon. 3. Krijohen antitrupa. 4. Kujtesa mbetet për vite.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1606013241766-1f30c48d5eb2" alt="mRNA Tech">
+      <div class="card-content">
+        <h3>Teknologjia mRNA</h3>
+        <p>mRNA është një mesazh që thotë qelizave të prodhojnë proteina spike. Këto proteina trajnojnë trupin pa virusin e vërtetë. Është e sigurt sepse mRNA shpërbëhet shpejt dhe nuk ndryshon ADN-në.</p>
+        <p><strong>Pse është revolucionare?</strong> Mund të zhvillohet në javë, jo vite, dhe është fleksibël për variante të reja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS & MYTHS -->
+<section id="benefits">
+  <h2 class="animate__animated animate__fadeInUp">Përfitimet & Mitet</h2>
+  <div class="cards-container">
+    <div class="card animate__animated animate__fadeInLeft">
+      <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" alt="Benefits">
+      <div class="card-content">
+        <h3>Përfitimet</h3>
+        <p>Vaksinat shpëtojnë miliona jetë çdo vit dhe mbrojnë komunitetet. Ato parandalojnë shpërthime të rrezikshme të sëmundjeve infektive. Gjithashtu, ulin kostot mjekësore dhe rrisin produktivitetin.</p>
+        <p><strong>Statistika globale:</strong> Vaksinimi ka ulur vdekjet nga poliomieliti me 99% dhe nga fruthi me 90%. Në Shqipëri, vaksinimi ka eliminuar sëmundje si difteria.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInRight">
+      <img src="https://images.unsplash.com/photo-1588776814546-1c7f5d1c8c61" alt="Myths">
+      <div class="card-content">
+        <h3>Mitet e zakonshme</h3>
+        <p>Disa mitet thonë se vaksinat shkaktojnë sëmundje kronike si autizmi, gjë që nuk është e vërtetë. Studime të shumta tregojnë se vaksinat janë të sigurta dhe nuk lidhen me këto probleme. Vaksinat nuk përmbajnë mikroçipa!</p>
+        <p><strong>Debunk:</strong> Studimi i Andrew Wakefield që lidhi vaksinën MMR me autizmin u tërhoq dhe ai u dënua për mashtrim. Të dhënat shkencore konfirmojnë sigurinë.</p>
+      </div>
+    </div>
+    <div class="card animate__animated animate__fadeInUp">
+      <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56" alt="Community Protection">
+      <div class="card-content">
+        <h3>Mbrojtja e Komunitetit</h3>
+        <p>Vaksinimi krijon "imunitet tufës" ku shumica e popullsisë është e mbrojtur, duke parandaluar përhapjen edhe tek të pavaksinuarët. Është përgjegjësi sociale!</p>
+        <p><strong>Fakt:</strong> Pandemia COVID-19 tregoi se vaksinimi ul shtrimet në spital me 90% dhe vdekjet me 95%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>Projekti realizuar nga: Joana Silaj</p>
+</footer>
+
+</body>
+</html>
